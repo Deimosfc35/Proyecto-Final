@@ -32,10 +32,40 @@ cout << "Ingrese los elementos del arreglo:" << endl;
     cout << "Maximo: " << maximo(arr, n) << endl;
     cout << "Minimo: " << minimo(arr, n) << endl;
 
-    return 0;
+
 
 // ==============Ejercicio 2 ==============
+
+// Ejercicio 3
+
+	string textoFrase = "El primer hombre en pisar la luna fue Neil Amstrong";
+    string resultadoSiglas = obtenerSiglas(textoFrase);
     
+    
+    cout << "\nTexto original: " << textoFrase << endl;
+    cout << "Resultado:      " << resultadoSiglas << endl;
+    cout << "--------------------------------------------------" << endl << endl;
+
+
+    
+    string textoNumero = "-9876";
+    int numeroConvertido = stringAInt(textoNumero);
+    
+   
+    cout << "Texto original:  \"" << textoNumero << "\"" << endl;
+    cout << "Como entero:     " << numeroConvertido << endl;
+
+
+
+    string textoEstructura = "estructura de datos";
+    char masRepetido = caracterMasRepetido(textoEstructura);
+    
+    
+    cout << "Texto analizado: \"" << textoEstructura << "\"" << endl;
+    cout << "Letra mas comun: '" << masRepetido << "'" << endl;
+    
+    
+    return 0;
 }
 
 
