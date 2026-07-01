@@ -4,7 +4,7 @@
 #include <stdint.h>
 #include <string.h>
 #include <stdlib.h>
-
+using namespace std;
 // ==============Ejercicio 1 ==============
 
 int sumaArreglo(int arr[], int n){
@@ -103,3 +103,79 @@ void imprimirArreglo(int arr[], int n){
 // ==============Ejercicio 2 ==============
 
 // ==============Ejercicio 3 ==============
+
+
+string obtenerSiglas(const string& texto){
+	string resultado = "";
+	
+	for(int i = 0; i < texto.length(); i++){
+		if(texto[i] != ' '){
+			
+			if(i == 0 || texto[i - 1] == ' '){
+				
+				if (!resultado.empty()) {
+                    resultado += ".";
+                    
+                }
+				
+				resultado += texto[i];
+			}	
+		}
+	}
+		
+	return resultado;		
+}
+
+int stringAInt(const string& texto) {
+    int resultado = 0;
+    int signo = 1;
+    int inicio = 0;
+
+    if (texto.empty()) return 0;
+
+    
+    if (texto[0] == '-') {
+        signo = -1;
+        inicio = 1;
+    } else if (texto[0] == '+') {
+        inicio = 1;
+    }
+
+   
+    for (int i = inicio; i < texto.length(); i++) {
+        
+        if (texto[i] >= '0' && texto[i] <= '9') {
+            resultado = resultado * 10 + (texto[i] - '0');
+        } else {
+           
+            break; 
+        }
+    }
+
+    return resultado * signo;
+}
+
+char caracterMasRepetido(const string& texto) {
+   
+    int frecuencias[256] = {0}; 
+
+    
+    for (int i = 0; i < texto.length(); i++) {
+        if (texto[i] != ' ') { 
+        	unsigned char indice = texto[i];
+        	frecuencias[indice]++;
+        }
+    }
+    
+    int maxFrecuencia = 0;
+    char masRepetido = ' ';
+
+    for (int i = 0; i < 256; i++) {
+        if (frecuencias[i] > maxFrecuencia) {
+            maxFrecuencia = frecuencias[i];
+            masRepetido = (char)i;
+        }
+    }
+
+    return masRepetido;
+}
