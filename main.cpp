@@ -12,7 +12,7 @@ int main() {
 
 // Investigue el funcionamiento del algoritmo de una Red Neuronal.
 // Implemente una red neuronal que sea capaz de predecir el valor de Y
-// recibiendo una entrada X
+// recibiendo una entrada X.
 cout << "---Ejercicio Red Neuronal---" << endl;
     float x[5]={0,1,2,3,4};
     float y[5]={1,3,5,7,9};
