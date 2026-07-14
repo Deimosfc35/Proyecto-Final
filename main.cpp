@@ -19,12 +19,13 @@ int main() {
 
 // Realice un algoritmo que permita resolver sistemas de ecuaciones lineales.
 
+ Ejercicio2();
 
 // ==============Ejercicio 3 ==============
 
-// Genere un algoritmo para resolver laberintos. Representa el laberinto
-// utilizando arreglos bidimensionales, donde las paredes se deben
-// representar con 1s, los espacios con 0s, la salida con un 2 y la llegada con un 3.
+//Genere un algoritmo para resolver laberintos. Representa el laberinto
+//utilizando arreglos bidimensionales, donde las paredes se deben
+//representar con 1s, los espacios con 0s, la salida con un 2 y la llegada con un 3.
 
 	
     return 0;
