@@ -271,7 +271,7 @@ void Ejercicio3() {
 
     if (xInicio == -1 || xMeta == -1) {
         cout << "Error: Falta el punto de inicio (2) o meta (3) en la matriz." << endl;
-        return; // Cambiado de 'return 1;' a 'return;' por ser una función void
+        return;
     }
 
     cout << "--- LABERINTO ORIGINAL ---" << endl;
