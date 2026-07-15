@@ -26,7 +26,6 @@ void Ejercicio3();
 
 const int FILAS = 10;
 const int COLUMNAS = 10;
-
 const int CAMINO = 0;
 const int PARED = 1;
 const int INICIO = 2; 
