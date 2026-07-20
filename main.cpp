@@ -1,5 +1,5 @@
 #include <iostream>
-#include "arreglos.h"
+#include "proyecto.h"
 #include <stdio.h>
 #include <stdint.h>
 #include <string.h>
@@ -8,29 +8,66 @@ using namespace std;
 
 int main() {
 
-// ==============Ejercicio 1 ==============
+    int opcion;
 
-// Investigue el funcionamiento del algoritmo de una Red Neuronal.
-// Implemente una red neuronal que sea capaz de predecir el valor de Y
-// recibiendo una entrada X
+    do {
+        cout << "=========================================" << endl;
+        cout << "              MENU PRINCIPAL" << endl;
+        cout << "=========================================" << endl;
+        cout << "1.- Red neuronal" << endl;
+        cout << "2.- Resolucion sistema de ecuaciones lineales" << endl;
+        cout << "3.- Resolucion laberinto" << endl;
+        cout << "0.- Salir" << endl;
+        cout << "=========================================" << endl;
+        cout << "Seleccione una opcion: " << endl;
+        cin >> opcion;
 
-Ejercicio1();
+        switch(opcion) {
 
-// ==============Ejercicio 2 ==============
+            // ==============Ejercicio 1 ==============
 
-// Realice un algoritmo que permita resolver sistemas de ecuaciones lineales.
+            // Investigue el funcionamiento del algoritmo de una Red Neuronal.
+            // Implemente una red neuronal que sea capaz de predecir el valor de Y
+            // recibiendo una entrada X
 
-Ejercicio2();
+            case 1:{
+            	Ejercicio1();
+				break;
+			}
+			
+            // ==============Ejercicio 2 ==============
 
-// ==============Ejercicio 3 ==============
+            // Realice un algoritmo que permita resolver sistemas de ecuaciones lineales.
 
-// Genere un algoritmo para resolver laberintos. Representa el laberinto
-// utilizando arreglos bidimensionales, donde las paredes se deben
-// representar con 1s, los espacios con 0s, la salida con un 2 y la llegada con un 3.
+            case 2:{
+            	Ejercicio2();
+				break;
+			}
+			
+            // ==============Ejercicio 3 ==============
 
-Ejercicio3();
-	
-	
+            // Genere un algoritmo para resolver laberintos.
+            // Representa el laberinto utilizando arreglos bidimensionales,
+            // donde las paredes se representan con 1s, los espacios con 0s,
+            // la salida con un 2 y la llegada con un 3.
+
+            case 3:{
+            	Ejercicio3();
+				break;
+			}
+
+            case 0:{
+            	cout << "Saliendo del programa...";
+				break;
+			}
+
+            default:{
+            	cout << "Opcion invalida. Intente nuevamente." << endl;
+				break;
+			}
+        }
+    } while(opcion != 0);
+
     return 0;
 }
 

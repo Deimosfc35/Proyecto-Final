@@ -1,5 +1,5 @@
-#ifndef ARREGLOS_H
-#define ARREGLOS__H
+#ifndef PROYECTO_H
+#define PROYECTO_H
 #include <string>
 
 using namespace std;
